@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝</title>
+	<style>
+		*{margin:0;padding:0;}
+		#play{width:80%;height:360px;padding-top:40px;margin:0 auto;overflow: hidden;position:relative;background-color:black; }
+		#play ul{position: absolute;left:0;top:25px;}
+		#play ul li{transition:0.6s all linear; border:8px solid white;float: left;width:240px;height:320px;list-style:none;}
+		#play ul li img{width:100%;height: 100%;}
+		#play ul li:hover{transform:scale(1.2);}
+	</style>
+	<script>
+		window.onload=function(){
+			var omain=document.getElementById("play");
+			var oul=omain.getElementsByTagName("ul")[0];
+			var lis=omain.getElementsByTagName("li");
+			var speed=2;
+			oul.innerHTML=oul.innerHTML+oul.innerHTML;
+			oul.style.width=lis[0].offsetWidth*lis.length+"px";
+			function move(){
+				// 往左边移动
+				if(oul.offsetLeft<-oul.offsetWidth/2){
+					oul.style.left='0';
+				}
+				// oul.style.left=oul.offsetLeft-2+"px";
+				// 往右边移动
+				if(oul.offsetLeft>0){
+					oul.style.left=-oul.offsetWidth/2+"px";
+				}
+				    	oul.style.left=oul.offsetLeft+speed+"px";
+			
+			}
+			var timer=setInterval(move,30);
+			omain.onmouseover=function(){
+				clearInterval(timer);
+			}
+			omain.onmouseout=function(){
+				timer=setInterval(move,30);
+			}
+			document.getElementsByTagName("a")[0].onclick=function(){
+				speed=-5;
+			}
+			document.getElementsByTagName("a")[1].onclick=function(){
+				speed=5;
+			}
+		};
+	</script>
+</head>
+<body>
+	<div id="play">
+		<ul>
+			<li><img src="pic11.jpg" alt=""></li>
+			<li><img src="pic12.jpg" alt=""></li>
+			<li><img src="pic15.jpg" alt=""></li>
+			<li><img src="pic14.jpg" alt=""></li>
+			<li><img src="pic16.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>

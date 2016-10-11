@@ -1,0 +1,107 @@
+.down{background:url(../images/bg.jpg);width:100%;height:1890px;position:relative;}
+.down .header{width:75%;height:60px;margin:0 auto;background-color:#fff;}
+.down .header img{height:60px;width:264px;float:left;padding-right:35px;}
+.down .header .top{line-height:60px;display:block;width:600px;height:60px;float:left;color:#c8bb9b;margin-left:38px;}
+.down .header .top a{color:#bc9d5d;font:12px/30px "微软雅黑";padding-left:20px;padding-right: 20px;}
+.down .header .top a:hover {color:red;font-size:14px;}
+.down .llo{width:75%;height:340px;margin:0 auto;background:#fff;}
+.down .llo .login{width: 227px;height: 338px; border: 1px #bf9e5b solid;float:left;margin-left: 35px;}
+.down .llo .login .in{margin: 26px;color: #858585;}
+.down .llo .login .title{height: 30px;border-bottom: 1px #ddcfac dashed;}
+.down .llo .login .mtb15{margin-top: 15px;margin-bottom: 15px;}
+.down .llo .login .in input.input{height: 20px;width: 173px;line-height: 20px;border: 1px #858585 solid;}
+.down .llo .login .in input#cap{width:80px;height:22px;}
+.down .llo .login .in input#remember{vertical-align: middle;}
+.down .llo .login .in input.submit{float: left;height: 28px;width: 85px;line-height: 28px;color: #ffffff;text-align: center;border: none;background: #bf9e5b;}
+.down .llo .login .in input.button{background: #cacaca; border: none; text-align: center;float: right;line-height: 28px;width: 85px;height: 28px;}   
+.down .llo .mmap{cursor:pointer;float:right;background:url(../images/bgg6.jpg)}   
+.down .search{width:75%;height:50px;margin:0 auto;background:#f8f8f8;}
+.down .search form{padding-top:10px;padding-left:20px;}    
+.down .search form input:last-child{font-size:13px;width:40px;height:20px;line-height:20px;background:gray;border:none;color:white;}   
+.down .menth{width:75%;height:66px;margin:0 auto;background:#fefaec;}
+.down .menth .menth_con{width:100%;height:40px;border-bottom:1px dashed #ddcfac;}
+.down .menth .menth_left{color:#bc9d5d;font:24px/10px "微软雅黑";float:left;padding-top:20px;}
+.down .menth .menth_right{color:gray;float:right;font:12px/20px "微软雅黑";padding-right:10px;padding-top:20px;}  
+.down .menth .menth_right span{padding-right:10px;padding-left:10px;}   
+.down #play{width:75%;height:360px;padding-top:40px;margin:0 auto;overflow: hidden;position:relative;background-color:#fefaec; }
+.down #play ul{position: absolute;left:0;top:25px;}
+.down #play ul li{transition:0.6s all linear; border:8px solid white;float: left;width:240px;height:320px;list-style:none;}
+.down #play ul li img{width:100%;height: 100%;}
+.down #play ul li:hover{transform:scale(1.2);}
+
+.down .llo .login .mtb15 img{vertical-align: middle;margin-bottom: 5px;cursor:pointer;}
+.down .cont{width:75%;height:400px;margin:0 auto;background:#fefaec;overflow:hidden;}
+.down .cont .fl{float:left;list-style: none;width: 310px;height: 324px;overflow: hidden;margin-left:13px;margin-right: 13px; margin-bottom: 24px;position: relative;}
+.down .cont .fl>img{ width: 310px;height: 200px;margin: 0px;padding: 0px;z-index: 1000;position:relative;}
+.down .cont .fl span{width:52px;height:44px;}
+.down .cont .fl span .inin{background:url(../images/nx_22.png) no-repeat;position:absolute;top:0;right:0;z-index: 2000;}
+.down .cont .fl span p{margin-top: 3px;text-align: center;font-size: 11px;height: 44px;color: #ffffff;}
+.down .cont .fl .desc{color:gray;font-size: 12px;height:70px;width:310px;background:#f8f8f8;}
+.down .cont .fl .desc .descs{float:right;}
+.down .cont .fl .desc .descs span{font-size: 14px;color: #bf9e5b;}
+.down .cont .fl .rank{
+	width: 312px;
+    height: 70px;
+    position: absolute;
+    left:0;
+    margin-left: 0px;
+    margin-top: -70px;
+    z-index: 10000;
+    transition:all 0.4s;
+    overflow:hidden;
+}
+.down .cont .fl .rank span{
+	 position:absolute;
+    width: 154px;
+    height: 34px;
+    background: #bf9e5b;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+    transition:all 0.4s;
+}
+.down .cont .fl .rank span:nth-child(3),
+.down .cont .fl .rank span:nth-child(4){
+    transition:all 0.4s 0.1s;
+}
+.down .cont .fl .rank span:nth-child(1){top:-35px;left:-154px;}
+.down .cont .fl .rank span:nth-child(2){top:-35px;right:-154px;}
+.down .cont .fl .rank span:nth-child(3){top:70px;left:-154px;}
+.down .cont .fl .rank span:nth-child(4){top:70px;right:-154px;}
+.down .cont .fl:hover .rank span:nth-child(1){top:0;left:0;}
+.down .cont .fl:hover .rank span:nth-child(2){top:0;right:0;}
+.down .cont .fl:hover .rank span:nth-child(3){top:35px;left:0;}
+.down .cont .fl:hover .rank span:nth-child(4){top:35px;right:0;}
+.down .cont .fl:hover .rank{display:block;} 
+.down .cont .fl .cart{height:25px;line-height:25px;background:#efefef;padding: 25px;text-align: center;}
+.down .cont .fl .cart .cart_{height:25px;width:85px;margin-left: 80px;background:#bf9e5b;border-radius: 3px;}
+.down .cont .fl .cart .cart_ a{color:white;}
+.down .cont .fl .cart .cart_:hover{background:black;}
+.fl_img{display:block;width: 310px;height: 200px;overflow: hidden;}
+.down .cont .fl img{transition:all 0.4s;}
+.down .cont .fl:hover img{transform:scale(1.1)}
+.down #stage{
+		width:800px;
+		height:500px;
+		position:absolute;
+		top:0;left:0;right:0;bottom:0;
+		margin:auto;
+		/*background:#f0f0f0;
+		box-shadow:inset 0 0 50px rgba(0,0,0,.35);*/
+		perspective:800px;
+		-webkit-perspective:800px;
+		-moz-perspective:800px;
+		perspective-origin:50% 50%;
+		}
+.down #stage{width:1011px;height: 300px;background:#fefaec;position: absolute;bottom: 0;top:883px; perspective:800px;-webkit-perspective:800px;-moz-persperspective:800px;perspective-origin:60%;/*决定你看的方位*/left:50%; transform:translateX(-50%);}
+.down #stage #container{transform-style:preserve-3d;position: absolute;width:200px;height: 150px;top:0;left:0;right: 0;bottom:0;margin:auto;cursor: pointer;transition:1s;}
+.down #stage #container img{width: 100%;height: 100%;position: absolute;top:0;left:0;box-shadow: 3px 3px 3px;transition:0.3s;}
+.down #stage #container img:nth-child(1){transform:translateX(-240px) translateZ(-200px);}
+.down #stage #container img:nth-child(2){transform:translateX(-120px) translateZ(-100px);}
+.down #stage #container img:nth-child(3){transform:translateZ(100px);}
+.down #stage #container img:nth-child(4){transform:translateX(100px) translateZ(-100px);}
+.down #stage #container img:nth-child(5){transform:translateX(220px) translateZ(-200px);}
+.picture img{position:absolute;left:0;top:59px;margin-top:230px;width:1011px;display: inline-block;}
+
+
+

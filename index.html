@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="keywords" content="美食，蛋糕，美味蛋糕">
+	<meta name="description" content="食物，漂亮的蛋糕，糕点">
+	<title>我的首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script src="js/index.js"></script>
+	<script>
+	// 回到顶部
+	function gotoTop(acceleration,stime) {
+	   acceleration = acceleration || 0.1;
+	   stime = stime || 10;
+	   var x1 = 0;
+	   var y1 = 0;
+	   var x2 = 0;
+	   var y2 = 0;
+	   var x3 = 0;
+	   var y3 = 0; 
+	   if (document.documentElement) {
+	       x1 = document.documentElement.scrollLeft || 0;
+	       y1 = document.documentElement.scrollTop || 0;
+	   }
+	   if (document.body) {
+	       x2 = document.body.scrollLeft || 0;
+	       y2 = document.body.scrollTop || 0;
+	   }
+	   var x3 = window.scrollX || 0;
+	   var y3 = window.scrollY || 0;
+	   var x = Math.max(x1, Math.max(x2, x3));
+	   var y = Math.max(y1, Math.max(y2, y3));
+	   var speeding = 1 + acceleration;
+	   window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+	   if(x > 0 || y > 0) {
+	       var run = "gotoTop(" + acceleration + ", " + stime + ")";
+	       window.setTimeout(run, stime);
+	   }
+	}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<ul>
+	        <li class="TN_LEFTone">
+	            <dt><a href="index.html"><img alt="首页" src="images/list1.jpg"></a></dt>
+	        </li>
+	        <li>
+	            <dt><a href="cake.html"><img alt="蛋糕馆" src="images/list2.jpg"></a></dt>
+	            <div class="TN_drop-down_menu">
+	                <ul class="L">
+	                    <li>
+	                    	<a href="#">芝士口味</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">慕斯口味</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">巧克力味</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">拿破仑味</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">冰淇淋味</a>
+	                    </li>
+	                    <li class="TN_noneBUT">
+	                    	<a href="#">奶油口味</a>
+	                    </li>
+	            	</ul>  
+	            </div>
+	        </li>
+	        <li><a href="gift.html"><img src="images/list7.jpg" alt=""></a></li>
+	        <li class="TN_logo">
+	            <img alt="" src="images/listlogo.jpg" width="271" height="52">
+	        </li>
+	        <li>
+	            <dt><a href="Leclub.html"><img alt="我的诺心" src="images/list3.jpg" width="100" height="52"></a></dt>
+	            <div class="TN_drop-down_menu">
+	                <ul class="L">
+	                    <li><a href="#">LECLUB</a></li>
+	                    <li><a href="#">我的订单</a></li>
+	                    <li><a href="#">我的信息</a></li>
+	                    <li><a href="#">找回密码</a></li>
+	                    <li><a href="#">修改密码</a></li>
+			            <li class="TN_noneBUT"><a href="#">礼卡专区</a></li>
+	                </ul>
+	            </div>
+	        </li>
+	        <li>
+	            <dt style="cursor: pointer"><a href="product.html"><img alt="企业专区" src="images/list4.jpg"></a></dt>
+	            <div class="TN_drop-down_menu">
+	                <ul class="L">
+	                    <li><a href="#">企业试吃</a></li>
+	                    <li><a href="#">大客户区</a></li>
+	                    <li><a href="#">企业试吃</a></li>
+	                    <li><a href="#">大客户区</a></li>
+	                    <li><a href="#">企业试吃</a></li>
+	                    <li class="TN_noneBUT"><a href="#">福利券区</a></li>
+	                </ul>
+	            </div>
+	            </dt>
+	        </li>
+	        <li>
+	            <dt><a href="about.html"><img alt="关于诺心" src="images/list8.jpg"></a></dt>
+	            <div class="TN_drop-down_menu">
+	                <ul class="L">
+	                    <li><a href="#">公司新闻</a></li>
+	                    <li><a href="#">公司公告</a></li>
+	                    <li><a href="#">公司简介</a></li>
+	                    <li><a href="#">品牌故事</a></li>
+	                    <li><a href="#">品牌理念</a></li>
+	                    <li class="TN_noneBUT"><a href="#">联系我们</a></li>
+	                </ul>
+	            </div>
+	        </li>
+    	</ul>
+	</div>
+	<div class="list">
+		<ul>
+			<li id="city">北京市</li>
+			<li class="call">
+                全国客服热线&nbsp;&nbsp;4001-578-578&nbsp;&nbsp;服务时间&nbsp;&nbsp;8:30-22:30
+            </li>
+			<li class="done">
+				<span id="wel">
+					<a class=""href="#">登录</a>
+					<span>|</span>
+					<a href="zhuce.html">注册</a>
+					<span>|</span>
+				</span>
+				<a href="#">购物车0件</a>
+				<span>|</span>
+				<a href="#">帮助</a>
+			</li>
+		</ul>
+	</div>
+	<div class="down">
+		<div class="banner">
+			<div class="bpic show"><img src="images/lunbo3.jpg" alt=""></div>
+			<div class="bpic"><img src="images/lunbo4.jpg" alt=""></div>
+			<div class="bpic"><img src="images/lunbo11.jpg" alt=""></div>
+			<div class="bpic"><img src="images/lunbo2.jpg" alt=""></div>
+			<div id="btn">
+				<span class="btn_span"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<dd><img src="images/piic1.jpg" alt=""></dd>
+					<dt><img src="images/photo1.jpg" alt=""></dt>
+				</li>
+				<li>
+					<dd><img src="images/piic2.jpg" alt=""></dd>
+					<dt><img src="images/photo2.jpg" alt=""></dt>
+				</li>
+				<li>
+					<dd><img src="images/picc3.jpg" alt=""></dd>
+					<dt><img src="images/photo3.jpg" alt=""></dt>
+				</li>
+				<li>
+					<dd><img src="images/piic4.jpg" alt=""></dd>
+					<dt><img src="images/photo4.jpg" alt=""></dt>
+				</li>
+				<li>
+					<dd><img src="images/piic5.jpg" alt=""></dd>
+					<dt><img src="images/photo5.jpg" alt=""></dt>
+				</li>
+				<li>
+					<dd><img src="images/pic6.jpg" alt=""></dd>
+					<dt><img src="images/photo6.jpg" alt=""></dt>
+				</li>
+			</ul>
+		</div>
+		<div class="photo">
+			<div class="photo_left"><img src="images/p1.jpg" alt=""></div>
+			<div class="photo_right">
+				<div><img src="images/lunbo1.jpg" alt=""></div>
+				<div><img src="images/lunbo6.jpg" alt=""></div>
+			</div>
+		</div>
+		<div class="product">
+			<ul>
+				<div class="bg">金牌系列</div>
+				<li class="one"><a href="">
+					<img src="images/case3.jpg" alt="">
+				</a></li>
+				<li class="two">
+					<dd>
+						<div class="two_left">
+							<p class="top">雪域牛乳芝士蛋糕</p>
+							<p class="bot"> Le Cheesecake</p>
+						</div>
+						<div class="two_right">
+							<p>1磅 价格:<span>198.00</span></p>
+							<p>
+								<span>甜度:</span>
+								<span class="last"><img src="images/love.jpg" alt=""><img src="images/love.jpg" alt=""></span>
+		
+							</p>
+						</div>
+					</dd>
+					<dt></dt>
+				</li>
+				<li class="three">
+					<dd>
+						<p class="th_one">
+							<a href="" class="th_cut">1磅</a>
+							<a href="">2磅</a>
+							<a href="">3磅</a>
+							<a href="">5磅</a>
+						</p>
+						<p class="th_two">
+							<a href="">加入购物车</a>
+							<a href="">立即购买</a>
+						</p>
+					</dd>
+					<dt></dt>
+				</li>
+			</ul>
+			<ul>
+				<div class="bg1">人气蛋糕</div>
+				<li class="one"><a href="">
+					<img src="images/case1.jpg" alt="">
+				</a></li>
+				<li class="two">
+					<dd>
+						<div class="two_left">
+							<p class="top">雪域牛乳芝士蛋糕</p>
+							<p class="bot"> Le Cheesecake</p>
+						</div>
+						<div class="two_right">
+							<p>1磅 价格:<span>198.00</span></p>
+							<p>
+								<span>甜度:</span>
+								<span class="last"><img src="images/love.jpg" alt=""><img src="images/love.jpg" alt=""></span>
+		
+							</p>
+						</div>
+					</dd>
+					<dt></dt>
+				</li>
+				<li class="three">
+					<dd>
+						<p class="th_one">
+							<a href="" class="th_cut">1磅</a>
+							<a href="">2磅</a>
+							<a href="">3磅</a>
+							<a href="">5磅</a>
+						</p>
+						<p class="th_two">
+							<a href="">加入购物车</a>
+							<a href="">立即购买</a>
+						</p>
+					</dd>
+					<dt></dt>
+				</li>
+			</ul>
+			<ul>
+				<div class="bg1">人气蛋糕</div>
+				<li class="one"><a href="">
+					<img src="images/case2.jpg" alt="">
+				</a></li>
+				<li class="two">
+					<dd>
+						<div class="two_left">
+							<p class="top">雪域牛乳芝士蛋糕</p>
+							<p class="bot"> Le Cheesecake</p>
+						</div>
+						<div class="two_right">
+							<p>1磅 价格:<span>198.00</span></p>
+							<p>
+								<span>甜度:</span>
+								<span class="last"><img src="images/love.jpg" alt=""><img src="images/love.jpg" alt=""></span>
+		
+							</p>
+						</div>
+					</dd>
+					<dt></dt>
+				</li>
+				<li class="three">
+					<dd>
+						<p class="th_one">
+							<a href="" class="th_cut">1磅</a>
+							<a href="">2磅</a>
+							<a href="">3磅</a>
+							<a href="">5磅</a>
+						</p>
+						<p class="th_two">
+							<a href="">加入购物车</a>
+							<a href="">立即购买</a>
+						</p>
+					</dd>
+					<dt></dt>
+				</li>
+			</ul>
+		</div>
+		<div class="picture">
+			<img src="images/footerban.jpg" alt="">
+		</div>
+		<div class="footer">
+			<div class="footerce">
+				<div class="tb_one">
+					<span><img src="images/LOGO.png" alt=""></span>
+					<span class="buy">新鲜配送上门</span>
+					<p>
+						<a href="">上海<span>|</span></a>
+						<a href="">北京<span>|</span></a>
+						<a href="">广州<span>|</span></a>
+						<a href="">深圳<span>|</span></a>
+						<a href="">重庆<span>|</span></a>
+						<a href="">四川<span>|</span></a>
+						<a href="">南京<span>|</span></a>
+						<a href="">天津<span>|</span></a>
+						<a href="">杭州<span>|</span></a>
+						<a href="">苏州<span>|</span></a>
+						<a href="">宁波<span>|</span></a>
+						<a href="">无锡<span>|</span></a>
+						<a href="">绍兴<span>|</span></a>
+						<a href="">嘉兴<span>|</span></a>
+					</p>
+				</div>
+				<ul>
+					<li><img src="images/1.png" alt=""><b>全年无休</b></li>
+					<li><img src="images/2.png" alt=""><b>安全配送</b></li>
+					<li><img src="images/3.png" alt=""><b>品质保证</b></li>
+					<li><img src="images/4.png" alt=""><b>保鲜食品</b></li>
+					<li><img src="images/5.png" alt=""><b>专业客服</b></li>
+					<li><img src="images/2.png" alt=""><b>企业采购</b></li>
+				</ul>
+				<p class="tb_two">
+					<a href="">关于琳琅<span>|</span></a>
+					<a href="">人才招聘<span>|</span></a>
+					<a href="">联系我们<span>|</span></a>
+					<a href="">呼叫中心<span>|</span></a>
+					<a href="">品牌理念<span>|</span></a>
+					<a href="">客户服务<span>|</span></a>
+					<span><img src="images/gsicon.gif" alt=""></span>
+				</p>
+				<p class="last">
+					<span>沪ICP备10211730|</span>
+					<span>社会信用代码：913100005648062293|</span>
+					<span>食品经营许可证编码：JY13101170022392|</span>
+					<span>copyright©2010-2016诺心lecake.com版权所有|</span>
+					<span>公司名称：诺心食品（上海）有限公司|</span>
+					<span>公司地址：上海徐汇区田林路140号28号楼|</span>
+					<span>客服邮箱: services@lecake.com|</span>
+					<span>公司电话：4001-578-578</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<ul>
+			<li><img src="images/close.gif" alt=""></li>
+			<li ><img class="wei"src="images/weixin.png" alt=""><span><img src="images/weixinerweima.jpg" alt=""></span></li>
+			<li><img src="images/qqtalk.png" alt=""></li>
+		</ul>
+	</div>
+	<a href="#" onclick="gotoTop();return false;" class="totop"></a>
+</body>
+</html>

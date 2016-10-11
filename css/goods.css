@@ -1,0 +1,87 @@
+.down{background:url(../images/bg.jpg);width:100%;height:1667px;}
+.down .warp{width:980px;height:1500px;margin:0 auto;padding-bottom:45px;background:url(../images/bg.jpg);}
+.down .warp .title{width:300px;height: 46px;text-align:left;font-size:46px;color: #ff4001;
+    padding-top:60px;padding-left:75px;padding-bottom: 17px;float: left;}
+.down .warp .content{width: 887px;height: auto;background-color: #FFF;margin-left: 47px;margin-right: 46px;float: left;}
+.down .warp .content .contact{width: 100%;height: 52px;background-color: #ff4001;margin-bottom: 43px; float: left;}
+.down .warp .content .contact .word{    height: 52px;line-height: 52px;font-family: "微软雅黑";font-size: 26px;color: #FFF;text-align: left;float: left;}
+.down .warp .content .contact .word1{width:420px;margin-left: 45px;}
+.down .warp .content .contact .word3{width:352px;margin-left:30px;}
+.down .warp .content .change{width: 873px;height:500px;float:left;margin-left: 14px;margin-right: 0px;margin-bottom: 30px;}
+.down .warp .content .change .cakes{float:left;text-align:center;width: 276px; height: 141px;margin-right: 14px;}
+.cakes .cake_1{position:relative;overflow: hidden;}
+.cakes .cake_1 img{transform:scale(1);transition:0.3s;width:100%;height:100%;}
+.cakes .cake_down{opacity:0.55;transform:scale(0);position:absolute;top:0;left:0;background-color:#aceadf;width: 271px; height:141px;overflow: hidden;}
+.cakes .cake_down span{color:white;font-size: 18px;text-align: center;}
+.cakes .cake_1:hover img{transform:scale(0.6);vertical-align: bottom;z-index: 20;}
+.cakes .cake_1:hover .cake_down{transform:scale(1);}
+.down .warp .content .change .cakess{margin-top:70px;float:left;text-align:center;width: 276px; height: 141px;margin-right: 14px;}
+.cakess .cake_11{position:relative;overflow: hidden;}
+.cakess .cake_11 img{ transition:0.8s;width:100%;height:100%;}
+.cakess .cake_downs{opacity:0.55;transform:translateX(-270px);transition:0.6s;position:absolute;top:0;left:0;background-color:#b1ff9c;opacity:0.5;width: 270px; height:145px;line-height:145px;overflow: hidden;}
+.cakess .cake_downs span{color:#ff4001;font-size: 20px;text-align: center;font-weight: bold;}
+.cakess .cake_11:hover img{transform:scale(1) translateX(276px);vertical-align: bottom;z-index: 20;}
+.cakess .cake_11:hover .cake_downs{transform:translateX(0);}
+.down .warp .content .change .cake{float:left;text-align:center;width: 276px; height: 240px;margin-right: 14px;}
+.cake li:nth-child(1) a{display:block;width:100%;height:141px;overflow:hidden;}
+.cake li:nth-child(1) a:hover img{animation:showImg 1s ease-in-out forwards;}
+@keyframes showImg{
+    from{transform:rotate(0deg) scale(1);}
+    50%{transform:rotate(360deg) scale(0.5);}
+    51%{transform:rotate(720deg) scale(0.5);}
+    to{transform:rotate(0deg) scale(1);}
+}
+.down .warp .content .change .p{width: 100%;height: 20px;line-height: 20px;font-family: "微软雅黑";font-size: 18px;text-align: left;color: #ff4001;margin-bottom: 17px;text-indent: 2px;float: left;}
+.down .warp .content .change .cakename{width: 100%;height: 20px;line-height: 20px;font-family: "微软雅黑";color: #888;font-size: 13px;}
+.down .warp .content .change .cakeinfo span{width: 100%;height: 20px;line-height: 20px;font-family: "微软雅黑";color: #888;font-size: 13px;}
+.down .warp .content .change .cakeinfo .price{color:red;}
+.down .warp .content .change li span img{margin-left:85px;margin-right:85px;float:left;width:106px;margin-top: 7px;margin-bottom: 20px; }
+.down .warp .content p{width:100%;height:auto;text-align: center;}
+.down .warp .content .rules{    
+	width: 840px;
+    height: 340px;
+    float: left;
+    margin-left: 26px;
+    position: relative;
+}
+.down .warp .content .rules .line{
+	width: 100%;
+    height: 1px;
+    border-bottom: 2px dashed #888;
+    margin-top: 12px;
+    margin-bottom: 38px;
+    float: left;}
+.down .warp .content .rules p{    
+	 width: 100%;
+    height: 30px;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;}
+.down .warp .content .rules p>span{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #888;
+    background: #fff;
+    letter-spacing: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: center;
+}
+.down .warp .content .rules .ruleword{width: 781px;
+    height: auto;
+    margin-left: 59px;
+    margin-top: 55px;
+    text-align: left;
+    float: left;} 
+.down .warp .content .rules .ruleword li{    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #888;
+    float: left;
+    margin-bottom: 10px;}
+
+

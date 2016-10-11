@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册界面</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/easyform.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li class="TN_LEFTone">
+                <dt><a href="index.html"><img alt="首页" src="images/list1.jpg"></a></dt>
+            </li>
+            <li>
+                <dt><a href="cake.html"><img alt="蛋糕馆" src="images/list2.jpg"></a></dt>
+                <div class="TN_drop-down_menu">
+                    <ul class="L">
+                        <li>
+                            <a href="#">芝士口味</a>
+                        </li>
+                        <li>
+                            <a href="#">慕斯口味</a>
+                        </li>
+                        <li>
+                            <a href="#">巧克力味</a>
+                        </li>
+                        <li>
+                            <a href="#">拿破仑味</a>
+                        </li>
+                        <li>
+                            <a href="#">冰淇淋味</a>
+                        </li>
+                        <li class="TN_noneBUT">
+                            <a href="#">奶油口味</a>
+                        </li>
+                    </ul>  
+                </div>
+            </li>
+            <li><a href="gift.html"><img src="images/list7.jpg" alt=""></a></li>
+            <li class="TN_logo">
+                <img alt="" src="images/listlogo.jpg" width="271" height="52">
+            </li>
+            <li>
+                <dt><a href="Leclub.html"><img alt="我的诺心" src="images/list3.jpg"></a></dt>
+                <div class="TN_drop-down_menu">
+                    <ul class="L">
+                        <li><a href="#">LECLUB</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的信息</a></li>
+                        <li><a href="#">找回密码</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li class="TN_noneBUT"><a href="#">礼卡专区</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <dt style="cursor: pointer"><a href="企业专区.html"><img alt="企业专区" src="images/list4.jpg"></a></dt>
+                <div class="TN_drop-down_menu">
+                    <ul class="L">
+                        <li><a href="#">企业试吃</a></li>
+                        <li><a href="#">大客户区</a></li>
+                        <li><a href="#">企业试吃</a></li>
+                        <li><a href="#">大客户区</a></li>
+                        <li><a href="#">企业试吃</a></li>
+                        <li class="TN_noneBUT"><a href="#">福利券区</a></li>
+                    </ul>
+                </div>
+                </dt>
+            </li>
+            <li>
+                <dt><a href="about.html"><img alt="关于诺心" src="images/list8.jpg"></a></dt>
+                <div class="TN_drop-down_menu">
+                    <ul class="L">
+                        <li><a href="#">公司新闻</a></li>
+                        <li><a href="#">公司公告</a></li>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">品牌理念</a></li>
+                        <li class="TN_noneBUT"><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="form-div">
+        <form id="reg-form" action="" method="post">
+            <h2>会员注册</h2>
+            <table>
+                <tr>
+                    <td>用户名:</td>
+                    <td><input name="uid" type="text" id="uid" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                    </td> 
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input name="psw1" type="password" id="psw1" easyform="length:6-16;" message="密码必须为6—16位" easytip="disappear:lost-focus;theme:blue;"></td>
+                </tr>
+                <tr>
+                    <td>确认密码:</td>
+                    <td><input name="psw2" type="password" id="psw2" easyform="length:6-16;equal:#psw1;" message="两次密码输入要一致" easytip="disappear:lost-focus;theme:blue;"></td>
+                </tr>
+                <tr>
+                    <td>email:</td>
+                    <td><input name="email" type="text" id="email" easyform="email;real-time;" message="Email格式要正确" easytip="disappear:lost-focus;theme:blue;" ajax-message="这个Email地址已经被注册过，请换一个吧!"></td>
+                </tr>
+                <tr>
+                    <td>昵称:</td>
+                    <td><input name="nickname" type="text" id="nickname" easyform="length:2-16" message="昵称必须为2—16位" easytip="disappear:lost-focus;theme:blue;"></td>
+                </tr>            
+            </table>
+
+            <div class="buttons">
+                <input value="注 册" type="submit" style="margin-right:20px; margin-top:20px;">
+                <input value="我有账号，我要登录" type="button" style="margin-right:45px; margin-top:20px;">
+            </div>
+            
+            <br class="clear">
+        </form>
+    </div>
+        <!--创建地图容器-->
+    <div id="container"></div>
+    <!--引入高德地图API文件-->
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=68c92db1b95e9f508da8670282763e32"></script>
+    <script type="text/javascript">
+    <!--按照默认属性创建地图和标记-->
+        var map = new AMap.Map('container');
+        map.setZoom(15);//设置缩放级别
+        map.setCenter([116.2695662200,40.1312580041]);//设置中心坐标
+        var marker = new AMap.Marker({//创建标记
+            position: [116.2695662200,40.1312580041],//设置标记位置
+            map:map//设置map属性，使得标记能被立即添加到地图上
+        });
+         //marker.setMap();移除点标记
+    <!--创建并且设置信息窗口-->
+         AMap.plugin('AMap.AdvancedInfoWindow',function(){
+           infowindow = new AMap.AdvancedInfoWindow({
+            content: '<div class="info-title">高德地图</div><div class="info-content">'+'我的位置。<br/>'+'</div>',//设置信息窗口内容
+            offset: new AMap.Pixel(0, -30)//设置窗口位置相对于标记的偏移量
+          });
+          infowindow.open(map,[116.2695662200,40.1312580041]);//创建好信息窗口后，立即调用open方法，让它显示在需要的位置
+        })
+    <!--添加工具条和比例尺子-->
+        AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){//加载工具条和比例尺两个插件放到数组中
+            var toolBar = new AMap.ToolBar();//在回调函数里进行控件的生成和添加
+            var scale = new AMap.Scale();
+            map.addControl(toolBar);
+            map.addControl(scale);
+        })
+        //map.removeControl(toolBar);移除控件
+    </script>
+    <div class="footer">
+        <div class="footerce">
+            <div class="tb_one">
+                <span><img src="images/LOGO.png" alt=""></span>
+                <span class="buy">新鲜配送上门</span>
+                <p>
+                    <a href="">上海<span>|</span></a>
+                    <a href="">北京<span>|</span></a>
+                    <a href="">广州<span>|</span></a>
+                    <a href="">深圳<span>|</span></a>
+                    <a href="">重庆<span>|</span></a>
+                    <a href="">四川<span>|</span></a>
+                    <a href="">南京<span>|</span></a>
+                    <a href="">天津<span>|</span></a>
+                    <a href="">杭州<span>|</span></a>
+                    <a href="">苏州<span>|</span></a>
+                    <a href="">宁波<span>|</span></a>
+                    <a href="">无锡<span>|</span></a>
+                    <a href="">绍兴<span>|</span></a>
+                    <a href="">嘉兴<span>|</span></a>
+                </p>
+            </div>
+            <ul>
+                <li><img src="images/1.png" alt=""><b>全年无休</b></li>
+                <li><img src="images/2.png" alt=""><b>安全配送</b></li>
+                <li><img src="images/3.png" alt=""><b>品质保证</b></li>
+                <li><img src="images/4.png" alt=""><b>保鲜食品</b></li>
+                <li><img src="images/5.png" alt=""><b>专业客服</b></li>
+                <li><img src="images/2.png" alt=""><b>企业采购</b></li>
+            </ul>
+            <p class="tb_two">
+                <a href="">关于琳琅<span>|</span></a>
+                <a href="">人才招聘<span>|</span></a>
+                <a href="">联系我们<span>|</span></a>
+                <a href="">呼叫中心<span>|</span></a>
+                <a href="">品牌理念<span>|</span></a>
+                <a href="">客户服务<span>|</span></a>
+                <span><img src="images/gsicon.gif" alt=""></span>
+            </p>
+            <p class="last">
+                <span>沪ICP备10211730|</span>
+                <span>社会信用代码：913100005648062293|</span>
+                <span>食品经营许可证编码：JY13101170022392|</span>
+                <span>copyright©2010-2016诺心lecake.com版权所有|</span>
+                <span>公司名称：诺心食品（上海）有限公司|</span>
+                <span>公司地址：上海徐汇区田林路140号28号楼|</span>
+                <span>客服邮箱: services@lecake.com|</span>
+                <span>公司电话：4001-578-578</span>
+            </p>
+        </div>
+    </div>
+    <div class="logo">
+        <ul>
+            <li><img src="images/close.gif" alt=""></li>
+            <li ><img class="wei"src="images/weixin.png" alt=""><span><img src="images/weixinerweima.jpg" alt=""></span></li>
+            <li><img src="images/qqtalk.png" alt=""></li>
+        </ul>
+    </div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#reg-form').easyform();
+});
+</script>
+</body>
+</html>

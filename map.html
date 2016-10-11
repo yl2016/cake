@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>我的地址</title>
+    <style>
+    #container{
+		width:80%; 
+		height:500px;}
+	.info-title {
+        width:100px;
+		background-color: rgba(0, 155, 255, 0.8);
+		color: white;
+		font-size: 14px;
+		font-weight: lighter;
+		letter-spacing: 1px;
+		line-height: 26px;
+		padding: 0 0 0 6px;
+	}
+	.info-content {
+        width:100px;
+		color: #666666;
+		line-height: 23px;
+		padding: 4px;
+	}
+    </style>
+</head>
+<body>
+<!--创建地图容器-->
+<div id="container"></div>
+<!--引入高德地图API文件-->
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=68c92db1b95e9f508da8670282763e32"></script>
+<script type="text/javascript">
+<!--按照默认属性创建地图和标记-->
+	var map = new AMap.Map('container');
+    map.setZoom(15);//设置缩放级别
+    map.setCenter([116.2695662200,40.1312580041]);//设置中心坐标
+    var marker = new AMap.Marker({//创建标记
+        position: [116.2695662200,40.1312580041],//设置标记位置
+        map:map//设置map属性，使得标记能被立即添加到地图上
+    });
+	 //marker.setMap();移除点标记
+<!--创建并且设置信息窗口-->
+	 AMap.plugin('AMap.AdvancedInfoWindow',function(){
+       infowindow = new AMap.AdvancedInfoWindow({
+        content: '<div class="info-title">高德地图</div><div class="info-content">'+'我的位置。<br/>'+'</div>',//设置信息窗口内容
+        offset: new AMap.Pixel(0, -30)//设置窗口位置相对于标记的偏移量
+      });
+      infowindow.open(map,[116.2695662200,40.1312580041]);//创建好信息窗口后，立即调用open方法，让它显示在需要的位置
+	})
+<!--添加工具条和比例尺子-->
+	AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){//加载工具条和比例尺两个插件放到数组中
+        var toolBar = new AMap.ToolBar();//在回调函数里进行控件的生成和添加
+        var scale = new AMap.Scale();
+        map.addControl(toolBar);
+        map.addControl(scale);
+    })
+	//map.removeControl(toolBar);移除控件
+</script>
+</body>
+</html>
